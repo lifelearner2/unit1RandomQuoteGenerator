@@ -62,10 +62,7 @@ const quotes =
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
   let randomQuote = quotes[randomNumber];
-  //console.log(randomQuote);
-  //console.log(randomNumber);
   return randomQuote;
- 
 };
 
 getRandomQuote();
@@ -82,18 +79,19 @@ getRandomQuote();
  function printQuote() {
   let randomized = getRandomQuote();
 
-let htmlString = `<p class="quote"> ${randomized.quote} </p>
-<p class="source"> ${randomized.source} `
+  let htmlString = `<p class="quote"> ${randomized.quote} </p>
+                    <p class="source"> ${randomized.source} `
 
 if (randomized.citation) {
-  htmlString += `<span class="citation"> ${randomized.citation}  </span>` 
+      htmlString += `<span class="citation"> ${randomized.citation}  </span>` 
 
 };
 
 if (randomized.year) {
-  htmlString += `<span class="year"> ${randomized.year}  </span>`
+      htmlString += `<span class="year"> ${randomized.year}  </span>`
 
 };
+
 htmlString += `</p>`;
 
 
@@ -103,7 +101,7 @@ document.getElementById("quote-box").innerHTML = htmlString;
 
 //  The last line after the 
 //  function was provided by Treehouse to ensure that my quotes would be formatted and displayed 
-//  correctly on the web page.
+//  correctly on the web page. The code also ensures that the button on the webpage functions properly.
 // /***
 //  * click event listener for the print quote button
 //  * DO NOT CHANGE THE CODE BELOW!!
