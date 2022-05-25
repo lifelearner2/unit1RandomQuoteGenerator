@@ -52,11 +52,6 @@ const quotes =
       year: `Unknown`}];
 
 
-// console.log( quotes.quote )
-// console.log( quotes.source )
-// console.log( quotes.citation )
-// console.log( quotes.year )
-
 
 /***
  * `getRandomQuote` function
@@ -98,57 +93,6 @@ htmlString += `</p>`;
 document.getElementById("quote-box").innerHTML = htmlString;
 
  }
-//console.log(randomized);
-
-
-
-
-
-
-
-
-
-   
-  
-//    {
-//       quotes.innerHTML = html 
-//       document.getElementById('quote-box').innerHTML = html + quotes[randomQuote];
-   
-//    }
-   
-   
-// //keeps printing out "object object object in place of quote"
-   
-//    //{
-//     //randomQuote.innerHTML = true;
-
-//    //}
-
-  
-
-   
-    
-
-//  //</p>
- 
-
-// //  let myQuotes = 
-// //  <p>
-// // class = "quotes" + randomQuote.quote 
-// // class = "source" + randomQuote.source
-// // class = "citation" + randomQuote.citation
-// // class = "year" + randomQuote.year 
-
-// //  </p>
-
-// //  quotes.quote + " " + quotes.source;
- 
- 
- 
-//  //document.getElementById('load-quote').addEventListener("click", printQuote, false);
-
-// //  document.getElementById('load-quote').innerHTML =
-
 
 
 
