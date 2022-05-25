@@ -71,39 +71,43 @@ function getRandomQuote(){
  
 };
 
+getRandomQuote();
 
-
-  
 /***
  * `printQuote` function
 ***/
 
  function printQuote() {
   let randomized = getRandomQuote();
-//console.log(randomized);
-document.getElementById("quote-box").innerHTML = 
 
-`<h1>
-${randomized.quote +  
-  randomized.source + 
-  randomized.citation + 
-  randomized.year
+let htmlString = `<p class="quote"> ${randomized.quote} </p>
+<p class="source"> ${randomized.source} `
 
-}</h1>`;
+if (randomized.citation) {
+  htmlString += `<span class="citation"> ${randomized.citation}  </span>` 
 
-return randomized;
+};
+
+if (randomized.year) {
+  htmlString += `<span class="year"> ${randomized.year}  </span>`
+
+};
+htmlString += `</p>`;
+
+
+document.getElementById("quote-box").innerHTML = htmlString;
 
  }
- 
+//console.log(randomized);
 
-//  var document
-// let html = `
-// <p class= "quote"> randomQuote.quote </p>
-// <  class= "source"> randomQuote.source
-//   <span class= "citation"> randomQuote.citation </span>
-//  <  class= "year"> randomQuote.year` 
-   
-//    if (quotes.quote = quotes.citation) + (quotes.quote = quotes.year) () ; 
+
+
+
+
+
+
+
+
    
   
 //    {
@@ -145,11 +149,7 @@ return randomized;
 
 // //  document.getElementById('load-quote').innerHTML =
 
-// //  let htmlString =
-// //   class_;"quote"; `Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.`
-// //   class_;"source"; `Patrick McKenzie`
-// //   class_; "citation"> Twitter
-// //   class_;"year"> 2016
+
 
 
 // /***
