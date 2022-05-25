@@ -76,71 +76,73 @@ return quotes[randomQuote];
 
  function printQuote() {
   let randomized = getRandomQuote();
-console.log(randomized)
+console.log(randomized);
+document.getElementById("quote-box").innerHTML = `<h2>${randomized.quote}</h2>`;
+
 return randomized;
 
  }
  
- printQuote();
- var document
-let html = `
-<p class= "quote"> randomQuote.quote </p>
-<  class= "source"> randomQuote.source
-  <span class= "citation"> randomQuote.citation </span>
- <  class= "year"> randomQuote.year` 
+
+//  var document
+// let html = `
+// <p class= "quote"> randomQuote.quote </p>
+// <  class= "source"> randomQuote.source
+//   <span class= "citation"> randomQuote.citation </span>
+//  <  class= "year"> randomQuote.year` 
    
-   if (quotes.quote = quotes.citation) + (quotes.quote = quotes.year) () ; 
+//    if (quotes.quote = quotes.citation) + (quotes.quote = quotes.year) () ; 
    
   
-   {
-      quotes.innerHTML = html 
-      document.getElementById('quote-box').innerHTML = html + quotes[randomQuote];
+//    {
+//       quotes.innerHTML = html 
+//       document.getElementById('quote-box').innerHTML = html + quotes[randomQuote];
    
-   }
+//    }
    
    
-//keeps printing out "object object object in place of quote"
+// //keeps printing out "object object object in place of quote"
    
-   //{
-    //randomQuote.innerHTML = true;
+//    //{
+//     //randomQuote.innerHTML = true;
 
-   //}
+//    //}
 
   
 
    
     
 
- //</p>
+//  //</p>
  
 
-//  let myQuotes = 
-//  <p>
-// class = "quotes" + randomQuote.quote 
-// class = "source" + randomQuote.source
-// class = "citation" + randomQuote.citation
-// class = "year" + randomQuote.year 
+// //  let myQuotes = 
+// //  <p>
+// // class = "quotes" + randomQuote.quote 
+// // class = "source" + randomQuote.source
+// // class = "citation" + randomQuote.citation
+// // class = "year" + randomQuote.year 
 
-//  </p>
+// //  </p>
 
-//  quotes.quote + " " + quotes.source;
+// //  quotes.quote + " " + quotes.source;
  
  
  
- //document.getElementById('load-quote').addEventListener("click", printQuote, false);
+//  //document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
-//  document.getElementById('load-quote').innerHTML =
+// //  document.getElementById('load-quote').innerHTML =
 
-//  let htmlString =
-//   class_;"quote"; `Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.`
-//   class_;"source"; `Patrick McKenzie`
-//   class_; "citation"> Twitter
-//   class_;"year"> 2016
+// //  let htmlString =
+// //   class_;"quote"; `Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.`
+// //   class_;"source"; `Patrick McKenzie`
+// //   class_; "citation"> Twitter
+// //   class_;"year"> 2016
 
 
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
+// /***
+//  * click event listener for the print quote button
+//  * DO NOT CHANGE THE CODE BELOW!!
+// ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+ document.getElementById('load-quote').addEventListener("click", printQuote, false);
