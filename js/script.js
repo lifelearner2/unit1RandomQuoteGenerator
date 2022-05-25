@@ -61,12 +61,16 @@ const quotes =
 /***
  * `getRandomQuote` function
 ***/
-var randomQuote
+
 function getRandomQuote(){
-  let randomQuote = Math.floor(Math.random() * quotes.length);
-  let myQuotes = ['0', '1', '2', '3', '4','5','6','7']
-return quotes[randomQuote];
+  let randomNumber = Math.floor(Math.random() * quotes.length);
+  let randomQuote = quotes[randomNumber];
+  //console.log(randomQuote);
+  //console.log(randomNumber);
+  return randomQuote;
+ 
 };
+
 
 
   
@@ -76,7 +80,7 @@ return quotes[randomQuote];
 
  function printQuote() {
   let randomized = getRandomQuote();
-console.log(randomized);
+//console.log(randomized);
 document.getElementById("quote-box").innerHTML = 
 
 `<h1>
