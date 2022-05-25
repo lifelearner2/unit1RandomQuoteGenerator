@@ -27,7 +27,7 @@ const quotes =
       year: `1963`},
 
       {quote: `Education is the most powerful weapon we can use to change the world.`,
-      source: `Neslon Mandela`,
+      source: `Nelson Mandela`,
       citation: `Speech in South Africa`,
       year: `2003`},
 
@@ -77,7 +77,15 @@ return quotes[randomQuote];
  function printQuote() {
   let randomized = getRandomQuote();
 console.log(randomized);
-document.getElementById("quote-box").innerHTML = `<h2>${randomized.quote}</h2>`;
+document.getElementById("quote-box").innerHTML = 
+
+`<h1>
+${randomized.quote +  
+  randomized.source + 
+  randomized.citation + 
+  randomized.year
+
+}</h1>`;
 
 return randomized;
 
