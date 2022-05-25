@@ -12,16 +12,16 @@ const quotes =
   [ { quote: `Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.`, 
       source: `Earl Nightingale`, 
       citation: `https://www.shopify.com/blog/motivational-quotes `,
-      year: `unknown` },
+      year: `unknown year` },
 
      {quote: `Out of the mountain of despair, a stone of hope`,
       source: `Martin Luther King Jr.`,
-      citation: `I Have A Dream" speech in Washington, DC`,
+      citation: `"I Have A Dream" speech in Washington, DC`,
       year: `1963`},
 
       {quote: `Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love can do that.`,
       source: `Martin Luther King Jr.`,
-      citation: `Strength to Love book`,
+      citation: `"Strength to Love" book`,
       year: `1963`},
 
       {quote: `Education is the most powerful weapon we can use to change the world.`,
@@ -31,7 +31,7 @@ const quotes =
 
       {quote: `You can't be that kid standing at the top of the waterslide, overthinking it. You have to go down the chute.`,
       source: `Tina Fey`,
-      citation: `Bossy Pants book`,
+      citation: `"Bossy Pants" book`,
       year: `2011`},
 
       {quote: `I didn't come this far to only come this far`,
@@ -41,13 +41,13 @@ const quotes =
 
       {quote: `A journey of a thousand miles begins with a single step`,
       source: `Lao Tzu`,
-      citation: `Chapter 64 of Tao Te Ching book`,
+      citation: `Chapter 64 of "Tao Te Ching" book`,
       year: `400 BC`},
 
       {quote: `Difficult roads often lead to beautiful destinations.`,
       source: `Zig Ziglar`,
-      citation: `Unknown`,
-      year: `Unknown`}];
+      citation: `Unknown citation`,
+      year: `Unknown year`}];
 
 
 
