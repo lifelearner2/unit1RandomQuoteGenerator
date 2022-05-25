@@ -1,14 +1,12 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
+// Treehouse FSJS Techdegree:
+// project 1 - A Random Quote Generator
 
 /*** 
- * `quotes` array 
+ Below I have created an array of quotes. 
+ The variable name is called quotes and it has a total of 8 objects 
+ in it that contain the following properties - quote, source, citation and year. 
+ These are represented in the string.
 ***/
 const quotes = 
   [ { quote: `Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.`, 
@@ -54,7 +52,11 @@ const quotes =
 
 
 /***
- * `getRandomQuote` function
+ Below I have created a function called getRandomQuote that is designed to 
+ create a random number and then use that number to return a random quote from my
+ array listed above. Each quote above has an index value that begins at zero so 
+ are 8 quotes but since it starts at zero the length ends at number 7. Lastly
+ I asked for the computer to populate a random quote every time this function runs.
 ***/
 
 function getRandomQuote(){
@@ -69,7 +71,12 @@ function getRandomQuote(){
 getRandomQuote();
 
 /***
- * `printQuote` function
+ * Here I created a function called printQuote. I am calling all the 
+ * actions of getRandomQuote into the variable called randomized. Then I utilized 
+ * p tags in an htmlString variable. In the If statement below that I am having 
+ * both randomized and htmlString concatenated together adn then used the provided 
+ * document code to populate all of my quotes along with their source, citation and year
+ * to the web page. I closed out the htmlString with p tags.
 ***/
 
  function printQuote() {
@@ -94,8 +101,9 @@ document.getElementById("quote-box").innerHTML = htmlString;
 
  }
 
-
-
+//  The last line after the 
+//  function was provided by Treehouse to ensure that my quotes would be formatted and displayed 
+//  correctly on the web page.
 // /***
 //  * click event listener for the print quote button
 //  * DO NOT CHANGE THE CODE BELOW!!
