@@ -6,7 +6,8 @@
  Below I have created an array of quotes. 
  The variable name is called quotes and it has a total of 8 objects 
  in it that contain the following properties - quote, source, citation and year. 
- These are represented in the string.
+ These are represented in the string. I chose to use back tics because some of my quotes have apostrophe's 
+ and I didn't want the computer to be confused since apostrophe's represent strings.
 ***/
 const quotes = 
   [ { quote: `Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.`, 
